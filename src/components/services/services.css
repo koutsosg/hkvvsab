@@ -1,0 +1,61 @@
+.dark {
+  background-color: #747474;
+}
+
+.line {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background: #747474;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.btwline {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #a7a8ae;
+}
+
+.Icon {
+  margin: auto;
+  font-size: 2.33333rem;
+
+  z-index: 1;
+  color: white;
+  background-color: #747474;
+}
+.Iconback {
+  margin: auto;
+  z-index: 0;
+  border-radius: 100%;
+  padding: 20px 22px;
+  margin-top: -35px;
+  background-color: #747474;
+  border: #747474;
+}
+.card-zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.card-zoom:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.card-zoom2 {
+  overflow: hidden;
+}
+
+.card-zoom2:hover {
+  overflow: hidden;
+}

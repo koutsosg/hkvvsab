@@ -1,0 +1,11 @@
+.hk-quote-container {
+  background-image: url(https://hkvvsab.se/wp-content/uploads/hk-quote-mark-02.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 250px;
+}
+.hk-quote {
+  font-size: 48px;
+  color: white;
+}

@@ -1,0 +1,47 @@
+:root {
+  --reach-dialog: 1;
+}
+
+[data-reach-dialog-overlay] {
+  background: hsla(0, 0%, 0%, 0.33);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+}
+
+[data-reach-dialog-content] {
+  width: 120vw;
+  margin: 20vh auto auto auto;
+  background: white;
+
+  outline: none;
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom2 {
+  transition: transform 0.2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.zoom2:hover {
+  overflow: hidden; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

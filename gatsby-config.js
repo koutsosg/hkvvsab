@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hylén & Kjellander VVS AB`,
+    description: `När vi grundade Hylén & Kjellander VVS tog vi med oss erfarenhet från många år inom service och entreprenad. Vi brinner för det vi gör och sätter alltid uppdragsgivaren i första rummet.`,
+    author: `@ohmygcdad`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/components/services/markserv`,
+        name: `markserv`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,6 +20,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/src/components/gallery/images`,
+      },
+    },
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-remark`,
+    `gatsby-remark-component`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
