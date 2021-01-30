@@ -8,16 +8,16 @@ import "./lightbox.css"
 
 const LightboxContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
-  @media (max-width: 820px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-  }
-  @media (max-width: 610px) {
+  @media (max-width: 1060px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+  @media (max-width: 705px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 5px;
   }
   @media (max-width: 410px) {
@@ -47,7 +47,33 @@ export default class Lightbox extends Component {
     const { selectedImage, showLightbox } = this.state
     return (
       <Fragment>
-        <LightboxContainer>
+        <div
+          className="text-center"
+          style={{
+            margin: `0 auto`,
+            maxWidth: 1400,
+          }}
+        >
+          <h3 className="btwline">
+            <span className="line"></span>
+            OUR WORK
+            <span className="line"></span>
+          </h3>
+
+          <h2>Our Latest Projects</h2>
+          <p style={{ paddingBottom: `1.75em` }}>
+            We offer a wide range of plumbing services catered to both
+            residential and commercial clients. Even the all-powerful Pointing
+            has no control about the blind texts.
+          </p>
+        </div>
+        <LightboxContainer
+          className="p-3"
+          style={{
+            margin: `0 auto`,
+            maxWidth: 1400,
+          }}
+        >
           {projectImages.map(image => (
             <PreviewButton
               key={image.node.childImageSharp.fluid.src}

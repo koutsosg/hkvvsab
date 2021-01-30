@@ -27,6 +27,13 @@ module.exports = {
         path: `${__dirname}/src/components/gallery/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/components/gallery/mdgallery`,
+        name: `mdgallery`,
+      },
+    },
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,

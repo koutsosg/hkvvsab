@@ -90,7 +90,7 @@ const Services = ({ data }) => {
             >
               {/*          <img className="card-img-top" src="..." alt="Card image cap"></img> */}
               <div
-                className="card-img-top card-zoom2"
+                className="card-img-top card-zoom2 text-center"
                 style={{
                   borderRadius: "1.25rem",
                   zIndex: "",
@@ -100,8 +100,9 @@ const Services = ({ data }) => {
                   style={{
                     borderRadius: "1.25rem",
                     zIndex: "",
+                    margin: "auto",
                   }}
-                  className="card-img-top mt-3 card-zoom"
+                  className="card-img-top mt-3 card-zoom "
                   fluid={serv.frontmatter.serviceImg.childImageSharp.fluid}
                   title="Click to download"
                   alt={serv.frontmatter.title + "thumbnail"}

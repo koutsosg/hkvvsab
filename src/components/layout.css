@@ -596,7 +596,19 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
+.divhr {
+  max-width: 60px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.divhr2 {
+  border-top: 3px solid rgb(255, 40, 40);
+}
+.pre-footer {
+  padding: 100px 0;
+}
 /* Bottom right text */
 .text-block {
   font-size: 3.5vw;

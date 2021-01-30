@@ -14,6 +14,7 @@ import "./slider/slick/slick.css"
 import "./slider/slick/slick-theme.css"
 import "./layout.css"
 import Headroom from "react-headroom"
+import Prefooter from "./footermenu"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,6 +38,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <Prefooter />
+
         <Footer />
       </div>
     </>
