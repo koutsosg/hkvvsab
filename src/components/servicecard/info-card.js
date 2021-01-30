@@ -75,7 +75,7 @@ const InfoCard = () => {
   `)
   return (
     <div
-      className="container text-center"
+      className="pt-5 pb-5 container text-center"
       style={{
         margin: `0 auto`,
         maxWidth: 1400,
