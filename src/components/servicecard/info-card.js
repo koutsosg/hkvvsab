@@ -3,6 +3,10 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "./info-card.css"
+import { faSink } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWrench } from "@fortawesome/free-solid-svg-icons"
+import { faShower } from "@fortawesome/free-solid-svg-icons"
 
 const CallButton = styled.a`
   position: absolute;
@@ -98,6 +102,8 @@ const InfoCard = () => {
           <div className="card card-flip img">
             <Front className="card-front  ">
               <div className="card-body">
+                <FontAwesomeIcon className="Icons" icon={faShower} />
+
                 <Title className="card-title">
                   {" "}
                   <span className="line"></span>services 1
@@ -123,6 +129,7 @@ const InfoCard = () => {
           <div className="card card-flip img">
             <Front className="card-front  ">
               <div className="card-body">
+                <FontAwesomeIcon className="Icons" icon={faWrench} />
                 <Title className="card-title">
                   {" "}
                   <span className="line"></span>services 2
@@ -148,6 +155,7 @@ const InfoCard = () => {
           <div className="card card-flip img">
             <Front className="card-front  ">
               <div className="card-body">
+                <FontAwesomeIcon className="Icons" icon={faSink} />
                 <Title className="card-title">
                   {" "}
                   <span className="line"></span>services 3
