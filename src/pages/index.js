@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import SimpleSlider from "../components/slider/carousel"
 import Layout from "../components/layout"
 import Section1Img from "../components/sectionOne/sectionImg"
@@ -13,6 +13,7 @@ import BetweenTwo from "../components/betweentwo"
 import BetweenThree from "../components/betweenThree"
 import InfoCard from "../components/servicecard/info-card"
 import Gallery from "../components/gallery/gallery"
+
 const CallButton = styled.a`
   color: white;
   cursor: pointer;

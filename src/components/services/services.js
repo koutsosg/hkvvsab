@@ -3,9 +3,9 @@ import React from "react"
 import "./services.css"
 import Img from "gatsby-image"
 import rehypeReact from "rehype-react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { faWrench } from "@fortawesome/free-solid-svg-icons"
-import { icon, library } from "@fortawesome/fontawesome-svg-core"
+import { library } from "@fortawesome/fontawesome-svg-core"
 import Icon1 from "./markserv/service1"
 import Icon2 from "./markserv/service2"
 import Icon3 from "./markserv/service3"
@@ -55,26 +55,6 @@ const Services = ({ data }) => {
 
   return (
     <div className="p-3 p-md-5 container-fluid">
-      <div
-        className="text-center"
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1400,
-        }}
-      >
-        <h3 className="btwline">
-          <span className="line"></span>
-          OUR SERVICES
-          <span className="line"></span>
-        </h3>
-
-        <h2>Quality Service is Our Guarantee</h2>
-        <p style={{ paddingBottom: `1.75em` }}>
-          We offer a wide range of plumbing services catered to both residential
-          and commercial clients. Even the all-powerful Pointing has no control
-          about the blind texts.
-        </p>
-      </div>
       <div
         className="row"
         style={{

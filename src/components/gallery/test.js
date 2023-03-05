@@ -1,7 +1,9 @@
- import React from "react"
+import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Lightbox from "./lightbox"
-const Gallery = () => (
+import { SRLWrapper } from "simple-react-lightbox"
+
+const MyComponent = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -20,7 +22,7 @@ const Gallery = () => (
         }
       }
     `}
-    render={data => <Lightbox projectImages={data.projectImages.edges} />}
+    render={data => <SRLWrapper elements={data.projectImages.edges} />}
   />
 )
-export default Gallery
+export default MyComponent

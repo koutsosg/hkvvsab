@@ -85,7 +85,6 @@ const InfoCard = () => {
         maxWidth: 1400,
       }}
     >
-      {" "}
       <h3 className="btwline">
         <span className="line"></span>
         OUR SERVICES
@@ -105,7 +104,6 @@ const InfoCard = () => {
                 <FontAwesomeIcon className="Icons" icon={faShower} />
 
                 <Title className="card-title">
-                  {" "}
                   <span className="line"></span>services 1
                 </Title>
                 <Text className="card-text">

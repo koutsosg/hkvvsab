@@ -22,8 +22,8 @@
 
 .zoom {
   transition: transform 0.2s; /* Animation */
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
   border-radius: 10%;
 }
@@ -35,8 +35,8 @@
 }
 .zoom2 {
   transition: transform 0.2s; /* Animation */
-  width: 320px;
-  height: 320px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
   border-radius: 10%;
   overflow: hidden;

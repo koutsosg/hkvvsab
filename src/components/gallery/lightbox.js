@@ -6,30 +6,10 @@ import { Dialog } from "@reach/dialog"
 /* import "@reach/dialog/styles.css" */
 import "./lightbox.css"
 
-const LightboxContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  @media (max-width: 1060px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
-  }
-  @media (max-width: 705px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-  }
-  @media (max-width: 410px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-`
+const LightboxContainer = styled.div``
 const PreviewButton = styled.button`
-  background: transparent;
   border: none;
-  padding: 0;
-  margin: 0;
+  background: none;
 `
 export default class Lightbox extends Component {
   static propTypes = {
@@ -67,15 +47,10 @@ export default class Lightbox extends Component {
             has no control about the blind texts.
           </p>
         </div>
-        <LightboxContainer
-          className="p-3"
-          style={{
-            margin: `0 auto`,
-            maxWidth: 1400,
-          }}
-        >
+        <LightboxContainer className="p-3 ">
           {projectImages.map(image => (
             <PreviewButton
+              className="col-6 col-sm-4 col-md-2 col-lg-2"
               key={image.node.childImageSharp.fluid.src}
               type="button"
               onClick={() =>
@@ -92,8 +67,20 @@ export default class Lightbox extends Component {
           ))}
         </LightboxContainer>
         {showLightbox && (
-          <Dialog>
-            <Img fluid={selectedImage.node.childImageSharp.fluid} />
+          <Dialog
+            style={{
+              margin: `300 auto`,
+              maxWidth: 300,
+              maxHeight: 300,
+            }}
+          >
+            <Img
+              style={{
+                maxWidth: `100%`,
+                height: `auto`,
+              }}
+              fluid={selectedImage.node.childImageSharp.fluid}
+            />
             <button
               type="button"
               onClick={() => this.setState({ showLightbox: false })}
